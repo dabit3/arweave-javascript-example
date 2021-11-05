@@ -1,6 +1,6 @@
 tasks:
   - name: Install dependencies, start local Arweave gateway
     init: yarn
-    command: npx arlocal
+    command: npx arlocal --y
   - name: Start server
     command: npm start
