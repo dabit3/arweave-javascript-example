@@ -3,4 +3,6 @@ tasks:
     init: yarn
     command: npx arlocal --y
   - name: Start server
-    command: npm start
+    command: |
+              gp await-port 1984
+              npm start
