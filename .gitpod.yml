@@ -2,7 +2,7 @@ tasks:
   - name: Install dependencies, start local Arweave gateway
     init: yarn
     command: npx arlocal --y
-  - name: Start server
-    command: |
-              gp await-port 1984
-              npm start
+  # - name: Start server
+  #   command: |
+  #             gp await-port 1984
+  #             npm start
