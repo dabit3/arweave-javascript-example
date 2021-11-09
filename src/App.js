@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Arweave from 'arweave';
 
@@ -17,6 +17,10 @@ function App() {
   const [state, setState] = useState('')
   const [transactionId, setTransactionId] = useState('')
   const [loadingState, setLoadingState] = useState('')
+
+  useEffect(() => {
+    console.log('env: ', process.env)
+  }, [])
 
   async function createTransaction() {
     if (!state) return
