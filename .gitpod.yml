@@ -5,4 +5,10 @@ tasks:
   - name: Start server
     command: |
       gp await-port 1984
+      export CLIENT_URL= $(gp url 1984)
       npm start
+ports:
+  - port: 3000
+    visibility: public
+  - port: 1984
+    visibility: public
