@@ -6,17 +6,26 @@ import Arweave from 'arweave';
 let arweave
 
 if (process.env.REACT_APP_WORKSPACE_URL) {
+  /* if in gitpod */
   let host = process.env.REACT_APP_WORKSPACE_URL.replace('https://', '')
   arweave = Arweave.init({
     host,
     protocol: 'https'
   })
 } else {
+  /* localhost / Arlocal */
   arweave = Arweave.init({
     host: '127.0.0.1',
     port: 1984,
     protocol: 'http'
   })
+  
+  /* to use mainnet */
+  // const arweave = Arweave.init({
+  //   host: 'arweave.net',
+  //   port: 443,
+  //   protocol: 'https'
+  // })
 }
 
 function App() {

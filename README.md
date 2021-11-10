@@ -1,12 +1,18 @@
 # Arweave React example
 
-Adding global, permanent, and decentralized storage to your app with Arweave
+Adding global, permanent, and decentralized storage to your app with [Arweave](https://www.arweave.org/).
 
-This is a code example of how to use Arweave tieh
+This is a code example of how to use Arweave and Arweave JS to save data to a permanant, decentralized network from a JavaScript application.
+
+This project can either be deployed with one click using [Gitpod](https://gitpod.io/) or cloned and run locally.
+
+### Dependencies
+
+To use this app, you need to have the [Arconnect](https://arconnect.io/) Arweave wallet installed as a browser extension.
 
 ### Open in Gitpod
 
-To deploy this project to Gitpod, follow these steps:
+To deploy this project to Gitpod, click this button:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/dabit3/arweave-javascript-example)
 
