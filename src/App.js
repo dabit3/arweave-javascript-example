@@ -33,10 +33,6 @@ function App() {
   const [transactionId, setTransactionId] = useState('')
   const [loadingState, setLoadingState] = useState('')
 
-  useEffect(() => {
-    console.log('env: ', process.env)
-  }, [])
-
   async function createTransaction() {
     if (!state) return
     try {
