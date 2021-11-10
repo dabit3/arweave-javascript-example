@@ -3,15 +3,20 @@ import { useState, useEffect } from 'react';
 
 import Arweave from 'arweave';
 
-const arweave = Arweave.init({
-  host: '127.0.0.1',
-  port: 1984,
-  protocol: 'http'
-});
+let arweave
 
-// const arweave = Arweave.init({
-//   host: 'arweave.net'
-// });
+if (process.env.REACT_APP_WORKSPACE_URL) {
+  arweave = Arweave.init({
+    host: process.env.REACT_APP_WORKSPACE_URL,
+    protocol: 'https'
+  })
+} else {
+  arweave = Arweave.init({
+    host: '127.0.0.1',
+    port: 1984,
+    protocol: 'http'
+  })
+}
 
 function App() {
   const [state, setState] = useState('')

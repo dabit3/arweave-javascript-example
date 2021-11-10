@@ -4,7 +4,7 @@ tasks:
     command: npx arlocal --y
   - name: Start server
     command: |
-      export CLIENT_URL="$(gp url 35729)/livereload.js?snipver=1&port=443"
+      export CLIENT_URL="$(gp url 1984)"
       gp await-port 1984
       npm start
 ports:
