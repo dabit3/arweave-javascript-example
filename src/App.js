@@ -6,8 +6,9 @@ import Arweave from 'arweave';
 let arweave
 
 if (process.env.REACT_APP_WORKSPACE_URL) {
+  let host = process.env.REACT_APP_WORKSPACE_URL.replace('https://', '')
   arweave = Arweave.init({
-    host: process.env.REACT_APP_WORKSPACE_URL,
+    host,
     protocol: 'https'
   })
 } else {
