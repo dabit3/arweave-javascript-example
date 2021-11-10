@@ -25,7 +25,7 @@ To run this project locally, follow these steps.
 ```sh
 git clone git@github.com:dabit3/arweave-javascript-example.git
 
-cd polygon-ethereum-nextjs-marketplace
+cd arweave-javascript-example
 
 # install using NPM or Yarn
 npm install
