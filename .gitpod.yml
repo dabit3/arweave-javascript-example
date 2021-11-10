@@ -9,7 +9,6 @@ tasks:
       npm start
 ports:
   - port: 3000
-    onOpen: open-browser
     visibility: public
   - port: 1984
     visibility: public
