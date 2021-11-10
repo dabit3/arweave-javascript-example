@@ -1,6 +1,6 @@
 tasks:
   - name: Install dependencies, start local Arweave gateway
-    init: sleep 1 && yarn
+    init: yarn
     command: npx arlocal --y
   - name: Start server
     command: |
@@ -9,6 +9,7 @@ tasks:
       npm start
 ports:
   - port: 3000
+    onOpen: open-browser
     visibility: public
   - port: 1984
     visibility: public
