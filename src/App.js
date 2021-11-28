@@ -14,11 +14,7 @@ if (process.env.REACT_APP_WORKSPACE_URL) {
   })
 } else {
   /* localhost / Arlocal */
-  arweave = Arweave.init({
-    host: '127.0.0.1',
-    port: 1984,
-    protocol: 'http'
-  })
+  arweave = Arweave.init({})
   
   /* to use mainnet */
   // const arweave = Arweave.init({
